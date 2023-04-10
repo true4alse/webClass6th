@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+    <link rel="stylesheet" href="./css/ex2.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="under">title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nulla exercitationem reprehenderit iste magnam natus rem expedita, ut facere iusto eum consequuntur dolorem molestiae commodi doloremque minima alias consectetur. Eaque.</p>
+        <dl>
+            <dt class="under">in-title1</dt>
+            <dd>in-description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum vero officia id tempora nihil commodi perferendis reiciendis magni rem asperiores laudantium aliquam fuga, esse similique placeat numquam deserunt est quia.</dd>
+            <dt class="under">in-title2</dt>
+            <dd>in-description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum vero officia id tempora nihil commodi perferendis reiciendis magni rem asperiores laudantium aliquam fuga, esse similique placeat numquam deserunt est quia.</dd>
+        </dl>
+    </div>
+    <script>
+        let clockBox = document.createElement("div")
+        clockBox.id = "clock"
++        document.querySelector("body").appendChild(clockBox)
+
+        const display = log => 
+        document.getElementById("clock").innerHTML = `${log.ampm} ${log.hours}:${log.minutes}:${log.seconds}`
+
+        const getTime = () => new Date()
+        
+        const civilianTime = time => ({
+            hours : time.getHours(),
+            minutes : time.getMinutes(),
+            seconds : time.getSeconds()
+        })
+        const ampmSet = time => ({
+            ...time,
+            ampm:(time.hours >= 12)? "PM":"AM",
+        })
+
+        const convertToTime = time => ({
+            ...time,
+            hours:time.hours > 12? time.hours-12:time.hours
+        })
+
+        const preventZero = time => ({
+            ...time,
+            hours : time.hours<10 ? `0${time.hours}` : time.hours,
+            minutes : time.minutes<10 ? `0${time.minutes}` : time.minutes,
+            seconds : time.seconds<10 ? `0${time.seconds}` : time.seconds,
+        })
+
+        const compose = (...fns) => (arg) => fns.reduce((composed,f)=>f(composed),arg)
+
+        const oneSecond = () => 1000
+        const startClocking = () => setInterval(()=>
+            compose(
+                getTime,
+                civilianTime,
+                ampmSet,
+                convertToTime,
+                preventZero,
+                display)()
+        ,oneSecond())
+        startClocking()
+        
+    </script>
+</body>
+</html>
