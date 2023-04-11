@@ -6,7 +6,7 @@ h1{font-size:5rem;}
 1rem - html태그에 적용된 글씨 크기
 1em - 부모태그에 적용된 글씨 크기
 */
-.b{font-weight:600;}
+.b{font-weight:bold;}
 /* 
 키워드방식- normal(기본값)/lighter(얇게)/bold(두껍게)
 수치입력방식 - 100~900까지 100단위로
@@ -19,7 +19,7 @@ h1{font-size:5rem;}
 */
 .d{
     font-size: 20px;
-    line-height:3.2;
+    line-height:320%;
 }
 /* 
 line-height 글씨를 감싸는 보이지 않는 라인의 높이를 의미하며, 기본적으로 글씨의 크기에 비례하여 120% 비율로 설정되어있다. %단위는 단위없이 정수로 소수점과 함께 사용하여 표현할 수 있다.
@@ -35,7 +35,7 @@ sans-serif -> 획이없는 고딕체 계열의 시스템폰트
 cursive -> 손글씨체 계열
 */
 .f{text-indent:100px;}
-.g{text-decoration:none;color:gray;}
+.g{text-decoration:line-through;color:gray;}
 /* 
 none(기본값) / underline(밑줄) / linethrough(취소선)
 */
@@ -48,7 +48,7 @@ none(기본값) / underline(밑줄) / linethrough(취소선)
 /* 
 left(기본값)/right/center/justify(양쪽정렬- 왼쪽과 오른쪽 가장자리 라인에 텍스트를 맞추는것을 우선적으로 처리함)
 */
-.m{text-transform:capitalize;}
+.m{text-transform:uppercase;}
 /* 
 uppercase(대문자로변형)/lowercase(소문자)/capitalize(앞글자만 대문자)   
 */
@@ -58,7 +58,7 @@ uppercase(대문자로변형)/lowercase(소문자)/capitalize(앞글자만 대�
     font-style:italic;
     font-family:'Times New Roman', Times, serif;
     line-height: 200%; */
-    font:italic bold 24px / 200% 'Times New Roman', Times, serif;
+    font:italic bold 24px / 24px 'Times New Roman', Times, serif;
     /* 축약형 표현 시 필요한 개별속성만 입력해도 되나 font 의 축약형 표현에서는 최소 font-size/font-family가 명시되어있어야 한다. */
     /* 축약형 표현은 띄어쓰기로 값을 구분.(경우에 따라서 /사용해서 구분할 때가 있음) */
     border:1px solid red;
