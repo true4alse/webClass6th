@@ -49,8 +49,8 @@
     width:30vw;
     height:30vw;
     margin:0 auto;
-    /* background-image:linear-gradient(0deg,red,blue); */
-    background-image:radial-gradient(red,blue);
+    background-image:linear-gradient(0deg,red,blue,green);
+    background-image:radial-gradient(red,blue,green);
 }
 
 .box6{
