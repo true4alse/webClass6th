@@ -1,0 +1,37 @@
+*{
+    margin:0;padding:0;
+}
+.box{
+    width:600px;
+    height:600px;
+    margin:0vh auto 50vh;
+    background:pink;
+    font-size:5rem;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    /* align-content:center; */
+    /* flex-wrap: wrap; */
+}
+.box>div{
+    /* flex-basis: 0;
+    flex-shrink: 1;
+    flex-grow: 1; */
+    flex:1;
+}
+.box .a{
+    background:red;
+    /* flex-shrink: 2; */
+    /* flex-grow: 2; */
+}
+.b{
+    background:green;
+}
+.c{
+    background:blue;
+}
+.d{
+    background:orange;
+}

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나야나비즈니스</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -44,9 +48,9 @@
                 <section>
                     <h2>
                         <img src="./img/m_tit_notice.gif" alt="뉴스 공지사항">
-                        <a href="#">+more</a>
+                        <a href="#" class="btnMore">+more</a>
                     </h2>
-                    <ul>
+                    <ul class="noticeList">
                         <li><a href="#">notice 1 <span>2011-02-21</span></a></li>
                         <li><a href="#">notice 2 <span>2011-02-20</span></a></li>
                         <li><a href="#">notice 3 <span>2011-02-19</span></a></li>
@@ -55,7 +59,7 @@
                 </section>
                 <section>
                     <h2><img src="./img/m_tit_quick.gif" alt="퀵메뉴"></h2>
-                    <ul>
+                    <ul class="quickList">
                         <li><a href="#"><img src="./img/q_m1.gif" alt="상담문의게시판"></a></li>
                         <li><a href="#"><img src="./img/q_m2.gif" alt="채용정보게시판"></a></li>
                         <li><a href="#"><img src="./img/q_m3.gif" alt="찾아오시는길"></a></li>
@@ -63,7 +67,9 @@
                 </section>
             </div>
         </main>
-        <footer>
+    </div>
+    <footer>
+        <div class="innerFooter">
             <div class="f_left">
                 <h1>
                     <a href="#">
@@ -72,7 +78,7 @@
                 </h1>
             </div>
             <div class="f_right">
-                <ul>
+                <ul class="footMenu">
                     <li><a href="#">개인정보취급방침</a></li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">사이트맵</a></li>
@@ -83,8 +89,8 @@
                 </address>
                 <p>COPYRIGHT (C) NAYAZOEN CO ,LTD. ALL RIGHTS RESERVED.</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!-- <aside></aside> -->
 </body>
 </html>
