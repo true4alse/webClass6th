@@ -12,14 +12,14 @@
 }
 .mainBanner > h2{
     position:absolute;
+    border:1px solid lime;
+    left:calc(50% - 120px);
+    top:calc(50% - 60px);
 
-    /* left:calc(50% - 120px);
-    top:calc(50% - 60px); */
-
-    left:50%;
+    /* left:50%;
     top:50%;
     margin-left:-120px;
-    margin-top:-60px;
+    margin-top:-60px; */
 
     /* text-align: center;
     line-height: 120px; */
