@@ -16,9 +16,9 @@
 .d:hover{transform:translateZ(100px)}
 .parent{
     border:1px solid blue;height:60vh;
-    perspective:600px;perspective-origin:50% 50%;
+    perspective:600px;perspective-origin:50% 100%;
 }
-.e{transform-origin:0% 50%;}
+.e{transform-origin:100% 50%;}
 .e:hover{transform:scaleX(2);}
 .f:hover{transform:scaleY(2);}
 .g:hover{transform:scale(1.5);}
@@ -27,3 +27,6 @@
 .h:hover{transform:rotate(360deg);}
 .i:hover{transform:rotateX(180deg);}
 .j:hover{transform:rotateY(180deg);}
+
+.k:hover{transform:skewX(30deg);}
+.l:hover{transform:skewY(30deg);}
