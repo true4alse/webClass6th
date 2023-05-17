@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // function a(){
+        //     alert("하이")
+        //     alert("울랄라")
+        //     alert("헤헤")
+        // }
+        // let a = function(){
+        //     alert("하이")
+        //     alert("울랄라")
+        //     alert("헤헤")
+        // }
+        let a = (name,age,state)=>{
+            alert("하이")
+            alert("울랄라")
+            alert("헤헤")
+            if(state==true){
+                document.write(`<h1>${name}님은 지금 잠이깻어요</h1>`)
+            }else{
+                document.write(`<h1>${name}님은 지금 졸려요</h1>`)
+            }
+            document.write(`<h1>${name}님은 ${age}살 입니다</h1>`)
+            return {p1:name,p2:age,p3:state}
+        }
+        a("정현진",38,false).p3
+
+
+
+    </script>
+    
+</body>
+</html>

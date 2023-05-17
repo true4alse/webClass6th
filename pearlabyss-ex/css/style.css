@@ -200,6 +200,7 @@ main{position:relative;}
     border:1px solid red;
     width:1440px;
     margin:0 auto;
+    margin-bottom:160px;
 }
 .culture>ul{
     border:1px solid blue;
@@ -265,11 +266,135 @@ main{position:relative;}
     height:1px;
     background:#fff;
 }
+.notice{
+    border:1px solid red;
+    width:1440px;
+    margin:0 auto;
+}
+.notice>ul{
+    display:flex;
+    justify-content: space-between;
+}
+.notice>ul>li{
+    width:calc((100% - 60px)/4);
+    border:1px solid red;
+}
+.notice li figure{
+    height:190px;
+    border:1px solid orange;
+    overflow: hidden;
+}
+.notice li figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition:all 0.5s ease 0s;
+}
+.notice li:hover figure img{
+    transform:scale(1.2);
+}
+.notice li p{
+    font-size:12px;
+    margin:20px 0;
+}
+.notice li h4{
+    font-size:15px;
+    font-weight: bold;
+}
 
-
-
-
-
-footer{border:10px solid green;}
+footer{margin-top:200px;}
+.footMenu1{
+    border-top:1px solid #ebebeb;
+    padding-top:70px;
+    margin-bottom:50px;
+}
+.footMenu1>ul{
+    border:1px solid red;
+    width:1120px;
+    margin:0 auto;
+    display:flex;
+}
+.footMenu1>ul>li{
+    border:1px solid blue;
+    width:calc(100%/6);
+}
+.footMenu1>ul>li>a{
+    font-weight:bold;
+    font-size:1.12rem;
+}
+.footMenu1>ul>li>ul{
+    margin-top:18px;
+    border:1px solid red;
+    color:#9a9a9a;
+    font-size: 1rem;
+}
+.footMenu1>ul>li>ul>li{
+    margin-bottom:14px;
+}
+.footMenu1>ul>li>ul>li:hover{
+    color:#000;
+}
+.footMenu1>ul>li>ul>li:last-of-type{
+    margin-bottom:0;
+}
+.footMenu2{
+    border-bottom:1px solid #ebebeb;
+    padding-bottom:75px;
+}
+.footMenu2>ul{
+    border:1px solid blue;
+    width:1120px;
+    margin:0 auto;
+    display: flex;
+}
+.footMenu2>ul>li{
+    border:1px solid red;
+    width:calc(100%/6);
+    font-weight:bold;
+    font-size:1.12rem;
+}
+.footMenu2>ul>li.blue{
+    color:#3774DA;
+}
+.coInfo{
+    width:1440px;
+    margin:0 auto;
+    border:1px solid red;
+    display:flex;
+    justify-content: space-between;
+    padding:26px 0;
+}
+.coInfo:before{
+    content:"";
+    width:138px;
+    border:1px solid blue;
+}
+.footLogo{
+    display:flex;
+    border:1px solid red;
+    align-items: center;
+}
+.copy{
+    color:#9a9a9a;
+    margin-left:36px;
+}
+.snsMenu{
+    width:138px;
+    border:1px solid red;
+}
+.snsMenu>ul{
+    display:flex;
+    justify-content: space-between;
+}
+.snsMenu>ul>li{
+    border:1px solid red;
+    width:38px;
+}
+.snsMenu>ul>li img{
+    width:100%;
+}
+.footLogo img{
+    width:120px;
+}
 
 

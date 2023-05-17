@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비만도예제</title>
     <link rel="stylesheet" href="./css/ex1.css">
+    <script src="./js/bmi.js"></script>
 </head>
 <body>
     <h1>퀴즈</h1>
@@ -22,57 +23,10 @@
         완성예시) 당신의 키는 170센티미터이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다 
     </pre>
     <script>
-    //    let userName = prompt("이름을 입력해주세요")
-    //    let userHeight = Number(prompt("키를 입력해주세요"))
-    //    let userWeight = Number(prompt("몸무게를 입력해주세요"))
-
-       function getBMI(uHeight,uWeight){
-            let result
-            result = uWeight / Math.pow((uHeight/100),2)
-            return result
-       }
-    //    let bmiResult = bmi>=25 ? "비만" :
-    //                    bmi>=23 && bmi<=24.9 ? "과체중" :
-    //                    bmi>=18.5 && bmi<=22.9 ? "정상" : "저체중"
-
-       function getBMI_result(bmiNum){
-            let result
-            if(bmiNum>=25){
-                result = "비만"
-            }else if(bmiNum>=23 && bmiNum<=24.9){
-                result = "과체중"
-            }else if(bmiNum>=18.5 && bmiNum<=22.9){
-                result = "정상"
-            }else{
-                result = "저체중"
-            }
-            return result
-       }
-    //    console.log(getBMI_result(getBMI(userHeight,userWeight)))
-
-       function showResult(uName,uHeight,uWeight,uBmi,uBmiResult){
-        document.write(`<table class="gradeStyle">
-            <caption>${uName}님의 비만도 검사결과</caption>
-            <tr>
-                <th>신장</th>
-                <td>${uHeight}cm</td>
-            </tr>
-            <tr>
-                <th>체중</th>
-                <td>${uWeight}kg</td>
-            </tr>
-            <tr>
-                <th>bmi</th>
-                <td>${uBmi}</td>
-            </tr>
-            <tr>
-                <th>결과</th>
-                <td>${uBmiResult}</td>
-            </tr>
-        </table>`)
-       }
-       showResult("정현진",180,40,20,"저체중")
-       showResult("정민진",170,20,18,"저체중")
+    
+       showResult("정현진",180,40,getBMI(180,40),getBMI_result(getBMI(180,40)))
+       showResult("정민진",170,20,getBMI(170,20),getBMI_result(getBMI(170,20)))
+       showResult("김시홍",169,73,getBMI(169,73),getBMI_result(getBMI(169,73)))
        
     </script>
 
