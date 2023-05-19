@@ -14,13 +14,16 @@
     <h2>전역변수</h2>
     <p>전역변수는 전체지역에서 생성된 변수이며 모든지역에서 접근이 가능하다</p>
 
+    <p>tip)변수는 안에서 밖으로는 접근이 가능하지만 밖에서 안으로는 접근이 불가능하다.</p>
     <script>
         let a = 100; // 전역변수
         // alert(person.name)
         function showName(){
-            // let a = 200
+            let a = 200
+            let b = 300
             alert(a)
         }
+        // alert(b)
         showName()
 
         
