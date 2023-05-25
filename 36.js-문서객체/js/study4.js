@@ -11,9 +11,9 @@ window.onload = function(){
     // list[1].style.borderBottom = "1px solid black"
     // list[2].style.borderBottom = "1px solid black"
     // list[3].style.borderBottom = "1px solid black"
-    for(let i=0 ; i<list.length ; i++){
-        list[i].style.borderBottom = "1px solid black"
-    }
+    // for(let i=0 ; i<list.length ; i++){
+    //     list[i].style.borderBottom = "1px solid black"
+    // }
 
     title.nextElementSibling.style.background = "lightblue"
     list[0].nextElementSibling.nextElementSibling.style.color="red"
