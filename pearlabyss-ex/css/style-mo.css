@@ -79,7 +79,7 @@ header.mo{
     top:0;
     width:75%;
     height:100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 .logoMo{
     width:31.47vw;
@@ -93,12 +93,51 @@ header.mo{
     width:100%;
 }
 .mobileMenuList ul{
-    display:none;
+    /* display:none; */
+    border:1px solid green;
+    margin-top:14px;
+    padding-left:10px;
+}
+.mobileMenuList ul>li{
+    color:#9a9a9a;
+    font-weight: 400;
+    border:1px solid blue;
+    margin-bottom:8px;
+}
+.mobileMenuList ul>li:last-of-type{
+    margin-bottom:0;
 }
 .mobileMenuList{
     border:1px solid red;
     width:88%;
     margin:0 auto;
+    height:calc(100% - 130px);
+    overflow: auto;
+}
+.mobileMenuList>li{
+    
+    /* padding:12px; */
+    font-size:1.12rem;
+    font-weight: bold;
+    position:relative;
+}
+.mobileMenuList>li>a{
+    border-bottom:1px solid #ccc;
+    display:block;
+    padding:12px;
+
+}
+.mobileMenuList>li:after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    right: 14px;
+    top: 11px;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
 }
 
 
