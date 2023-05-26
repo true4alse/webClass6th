@@ -148,22 +148,22 @@ main{position:relative;}
     font-weight: bold;
     margin-bottom:26px;
 }
-.news>ul{
+.news ul{
     display:flex;
 }
-.news>ul>li{
+.news ul>li{
     border-right:1px solid #ebebeb;
-    flex:1;
+    /* flex:1; */
     padding:0 30px;
 }
-.news>ul>li:first-of-type{
+.news ul>li:first-of-type{
     padding-left:0;
 }
-.news>ul>li:last-of-type{
+.news ul>li:last-of-type{
     padding-right:0;
     border-right:none;
 }
-.news>ul>li h4{
+.news ul>li h4{
     font-size:15px;
     font-weight: bold;
     margin-bottom:16px;
