@@ -155,7 +155,9 @@ main{position:relative;}
     border-right:1px solid #ebebeb;
     /* flex:1; */
     padding:0 30px;
+    box-sizing: border-box;
 }
+
 .news ul>li:first-of-type{
     padding-left:0;
 }
@@ -167,6 +169,10 @@ main{position:relative;}
     font-size:15px;
     font-weight: bold;
     margin-bottom:16px;
+}
+.news .swiper-pagination{
+    position:relative;
+    border:1px solid red;
 }
 .date{
     font-size:10px;
