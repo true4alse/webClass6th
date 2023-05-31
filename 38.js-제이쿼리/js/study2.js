@@ -1,5 +1,7 @@
 $(document).ready(function(){
     //문서가 쭉 읽힌 뒤 실행될 소스코드
+
+    
     $("p").css("color","green")
     $("p").css("font-weight","bold")
     $("p").css("color","navy").css("font-weight","normal")
@@ -9,7 +11,9 @@ $(document).ready(function(){
     let link = $(".naverLink").attr("href")
     console.log(link)
 
-    $(".textframe>p:nth-of-type(1)").html("<i>text()함수</i>는 선택한태그의 안에들어가는 내용을 새로운 내용으로 교체할 수 있다.")
+    // document.querySelector(".textframe").children[0].innerHTML = "<i>text()함수</i>는 선택한태그의 안에들어가는 내용을 새로운 내용으로 교체할 수 있다."
+
+    $(".textframe>p:nth-of-type(1)").text("<i>text()함수</i>는 선택한태그의 안에들어가는 내용을 새로운 내용으로 교체할 수 있다.")
 
     let textP = $(".textframe>p:nth-of-type(2)").text()
     console.log(textP)
@@ -29,7 +33,11 @@ $(document).ready(function(){
     //     listArray[i].style.color = "red"
     // }
 
-    $(".listNum>li").eq(2).css("color","red")
+    let num = Number(prompt("몇번째 리스트를 활성화 시키실래요?"))
+    $(".listNum>li").eq(num-1).css("color","red")
+
+
+    
 
 
 
