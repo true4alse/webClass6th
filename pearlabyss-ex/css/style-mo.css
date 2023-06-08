@@ -291,21 +291,14 @@ main{position:relative;}
     background:#fff;
 }
 .notice{
-    border:1px solid red;
-    width:1440px;
+    
+    width:90%;
     margin:0 auto;
 }
-.notice>ul{
-    display:flex;
-    justify-content: space-between;
-}
-.notice>ul>li{
-    width:calc((100% - 60px)/4);
-    border:1px solid red;
-}
+
+
 .notice li figure{
     height:190px;
-    border:1px solid orange;
     overflow: hidden;
 }
 .notice li figure img{
@@ -324,6 +317,14 @@ main{position:relative;}
 .notice li h4{
     font-size:15px;
     font-weight: bold;
+}
+.notice .notice_pagination{
+    position:relative;
+    border:1px solid blue;
+}
+
+span.swiper-pagination-bullet-active {
+    background: black;
 }
 
 footer{margin-top:200px;}

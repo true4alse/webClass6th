@@ -42,6 +42,7 @@ nav.on{
 .gnb>li{
     height:50px;
     overflow: hidden;
+    transition:all 0.5s ease 0s;
 }
 
 .gnb>li>a{
@@ -50,6 +51,36 @@ nav.on{
     height:50px;
     box-sizing: border-box;
     align-items: center;
+    /* border:1px solid lime; */
+    justify-content: space-between;
+}
+.depi{
+    /* border:1px solid blue; */
+    width:20px;
+    height:20px;
+    position:relative;
+    transition:all 0.5s ease 0s;
+}
+.depi:before{
+    content:"";
+    background:black;
+    position:absolute;
+    left:0;
+    top:9px;
+    width:20px;
+    height:1px;
+}
+.depi:after{
+    content:"";
+    position:absolute;
+    left:9px;
+    top:0;
+    width:1px;
+    height:20px;
+    background:black;
+}
+.gnb>li.on .depi:after{
+    display:none;
 }
 .gnb ul>li{
     
