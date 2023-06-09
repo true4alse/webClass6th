@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
         let con2top = $(".con2").offset().top
@@ -22,7 +23,7 @@ $(document).ready(function(){
        
        if(delta<0){
         //마우스 휠을 내렸을 때
-        if($(this).next().length!=0){
+        if($(this).next().length){
             let posTop = $(this).next().offset().top
             $("html,body").stop().animate({scrollTop:posTop},1000)
         }

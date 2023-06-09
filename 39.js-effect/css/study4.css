@@ -1,0 +1,28 @@
+*{margin:0;padding:0;}
+.wrap{
+    width:1000px;
+    margin:0 auto;
+}
+.wrap>section{
+    font-size:2.5rem;
+    padding:20vh 0;
+}
+.wrap>section h1{
+    margin-bottom:30px;
+    transform:translateX(-50px);
+    opacity: 0.1;
+    transition:all 0.5s ease 0s;
+}
+.wrap>section h1.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+.wrap>section p{
+    transform:translateX(50px);
+    opacity: 0.1;
+    transition:all 0.5s ease 0s;
+}
+.wrap>section p.on{
+    transform:translateX(0);
+    opacity: 1;
+}
