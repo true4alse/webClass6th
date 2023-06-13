@@ -6,6 +6,7 @@ $(document).ready(function(){
     let stationWidth;
     let trainWidth;
 
+    
     let winWidth = $(window).width()
     if(winWidth>=1024){
         console.log("pc사이즈입니다")
@@ -26,7 +27,6 @@ $(document).ready(function(){
         trainWidth = stationWidth * 5 / perView
         $(".train").width(trainWidth)
     }
-
     
 
     $(window).resize(function(){
@@ -63,9 +63,29 @@ $(document).ready(function(){
     $(".btnPrev").click(function(e){
         e.preventDefault()
         count--
-        if(count<0){count=0}
+        if(count<0){count=4}
         moveSlider(count)
+    })  
+
+    // 자동슬라이드기능
+    let timer = setInterval(function(){
+        count++
+        if(count>4){count=0}
+        moveSlider(count)
+    },2000)
+
+    $(".station").mouseover(function(){
+        clearInterval(timer)
     })
+
+    $(".station").mouseout(function(){
+        timer = setInterval(function(){
+            count++
+            if(count>4){count=0}
+            moveSlider(count)
+        },2000)
+    })
+    
 
     function moveSlider(idx){
         $(".train").css("transform","translateX("+(-20*idx)+"%)")
