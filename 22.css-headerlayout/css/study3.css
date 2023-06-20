@@ -17,6 +17,7 @@ header{
     display:flex;
     /* align-items: center; */
     justify-content: space-between;
+    position:relative;
 }
 .logo{
     align-self: center;
@@ -37,8 +38,34 @@ header{
     align-items: center;
 } 
 /* 2depth */
+.gnb>li:hover .gnb2dep{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .gnb2dep{
     border:2px solid lime;
+    position:absolute;
+    left:0;
+    top:80px;
+    width:100%;
+    display:flex;
+    font-weight: 400;
+    transition:all 0.5s ease 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.gnb2dep>section{
+    flex:1;
+    padding:30px;
+}
+.gnb2dep>section:nth-of-type(2){
+    display:flex;
+}
+.gnb2dep>section:nth-of-type(2)>ul{
+    margin-left:15px;
+    border-left: 1px solid gold;
+    padding-left: 15px;
 }
 
 .banner{height:60vh;}
