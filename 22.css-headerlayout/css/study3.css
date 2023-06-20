@@ -1,0 +1,29 @@
+*{margin:0;padding:0;}
+a{text-decoration: none;color:inherit;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+/* layout */
+.gnb2dep{display:none;}
+header{
+    border:1px solid red;
+    height:80px;
+}
+.innerHeader{
+    border:1px solid blue;
+    width:1400px;
+    margin:0 auto;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    border:1px solid red;
+}
+.gnb{
+    border:1px solid green;
+    width:800px;
+}
+
+.banner{height:60vh;}
+.banner img{width:100%;height:100%;object-fit: cover;}
