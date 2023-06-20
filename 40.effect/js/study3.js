@@ -10,7 +10,7 @@ $(document).ready(function(){
         textSize:30,
         aniSpeed:0.5,
         aniDelay:0.01,
-        effect:"moveTopToBottom"
+        effect:"bounce"
     })
 
 

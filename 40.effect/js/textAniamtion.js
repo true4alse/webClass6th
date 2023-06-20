@@ -17,7 +17,7 @@ function textAni(cssSelector,option){
     let aniTxtSize = option.textSize?option.textSize:20
     let aniName = option.effect?option.effect:"introAni"
 
-    $(cssSelector).css("font-size","0")
+    // $(cssSelector).css("font-size","0")
     $(cssSelector+" b").css("opacity","0").css("line-height","1").css("display","inline-block").css("font-size",aniTxtSize+"px")
 
     for(let i=0 ; i<$(cssSelector+" b").length ; i++){
