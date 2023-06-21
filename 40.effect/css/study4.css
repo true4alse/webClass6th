@@ -1,0 +1,77 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+/* layout */
+body{
+    background:rgb(203, 141, 254);
+}
+header{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:20px;
+    padding-bottom:0;
+}
+.snsMenu{
+    
+    display:flex;
+    /* margin-left:20px;
+    margin-top:20px; */
+}
+.snsMenu>li{
+    
+    font-size:24px;
+    margin-right:14px;
+    color:#fff;
+    transition:transform 0.5s ease 0s,color 1s ease 0s;
+}
+.snsMenu>li:hover{
+    transform:scale(1.2);
+    color:aqua;
+}
+.snsMenu>li:last-of-type{margin-right:0;}
+.logo{
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.672);
+    line-height: 0;
+    /* margin-right:20px;
+    margin-top:20px; */
+}
+.stationMenu{
+    
+    display:flex;
+    padding-left:20px;
+    margin-bottom:70px;
+}
+.stationMenu>li{
+    margin-right:20px;
+    text-transform: capitalize;
+    transition:all 0.5s ease 0s;
+}
+.stationMenu>li:hover{
+    color:aqua;
+}
+.station{
+    border:1px solid red;
+    width:100%;
+    height:500px;
+}
+.train{
+    width:4600px; /*리스트를 클릭했을 때 원래크기보다 600픽셀이 더 늘어날 것을 예상*/
+    height:500px;
+    transition:all 0.5s ease 0s;
+    border:1px solid green;
+    display:flex;
+}
+.train>li{
+    border:1px solid blue;
+    width:180px;
+    margin-right:20px;
+}
+
+
+
