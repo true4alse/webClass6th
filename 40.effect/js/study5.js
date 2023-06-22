@@ -10,4 +10,13 @@ $(document).ready(function(){
         $(".cursor").addClass("on")
     })
 
+    $(".slider").mouseover(function(){
+        $(".cursor").addClass("big")
+    })
+
+    $(".slider").mouseout(function(){
+        $(".cursor").removeClass("big")
+    })
+    
+
 })
