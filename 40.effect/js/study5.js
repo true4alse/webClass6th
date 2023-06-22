@@ -8,10 +8,15 @@ $(document).ready(function(){
         $(".cursor").css("left",posX+"px")
         $(".cursor").css("top",posY+"px")
         $(".cursor").addClass("on")
+        
+        $(".cursorGuideBox").css("left",(posX+150)+"px")
+        $(".cursorGuideBox").css("top",posY+"px")
     })
 
     $(".slider").mouseover(function(){
         $(".cursor").addClass("big")
+        let txt = $(".slider").attr("data-desc")
+        $(".cursorGuideBox").text(txt)
     })
 
     $(".slider").mouseout(function(){

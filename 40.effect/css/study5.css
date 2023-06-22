@@ -19,10 +19,53 @@
     opacity: 1;
 }
 .cursor.on.big{
-    width:200px;
-    height:200px;
+    width:120px;
+    height:120px;
+    background:transparent;
+    border:1px solid lime;
 }
-
+.wheelAni{
+    display:none;
+    border:1px solid lime;
+    width:20px;
+    height:80px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-10px;
+    margin-top:-40px;
+    font-size:0;
+    border-radius: 10px;;
+}
+.wh{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background:lime;
+    position:absolute;
+    left:50%;
+    margin-left:-5px;
+    top:10px;
+    animation:wheelAni 1s ease 0s infinite alternate;
+}
+@keyframes wheelAni {
+    0%{top:10px;}
+    100%{top:60px;}
+}
+.cursor.on.big .wheelAni{display:block;}
+.cursor.on.big+.cursorGuideBox{display:block;}
+/* 마우스커서를 따라다니는 설명텍스트 영역 */
+.cursorGuideBox{
+    display:none;
+    pointer-events: none;
+    position:fixed;
+    left:0;top:0;
+    width:150px;
+    background:rgba(255, 255, 255, 0.727);
+    padding:14px;
+    font-size:20px;
+    border-radius: 10px;
+}
 
 .wrap{}
 .wrap>section{
