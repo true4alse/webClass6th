@@ -1,16 +1,16 @@
 let artwork = [
     {
-        title:"art work 01",
+        title:"best art work 01",
         imgFileName:"s1.jpg",
-        description:"Artwork description comes here.<br>2023.06.20"
+        description:"Artwork description comes here.<br>2023.06.22"
     },
     {
-        title:"art work 02",
+        title:"art2",
         imgFileName:"s2.jpg",
         description:"Artwork description comes here.<br>2023.06.20"
     },
     {
-        title:"art work 03",
+        title:"work3",
         imgFileName:"s3.jpg",
         description:"Artwork description comes here.<br>2023.06.20"
     },

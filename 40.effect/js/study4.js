@@ -12,9 +12,13 @@ $(document).ready(function(){
     // }
 
     for(let i=0 ; i<20 ; i++){
-        
+        result+=`<li>
+            <img class="small" src="./img/${artwork[i].imgFileName}" alt="${artwork[i].title}">
+            <h2 class="title">${artwork[i].title}</h2>
+            <p>${artwork[i].description}</p>
+            <span class="btnClose">close</span>
+        </li>`
     }
-
     $(".train").html(result)
 
     $(".stationMenu>li").click(function(){
@@ -57,6 +61,7 @@ $(document).ready(function(){
     $(".train>li").click(function(){
         $(".train>li").removeClass("on")
         $(this).addClass("on")
+        
         let idx = $(this).index()
         count = idx //동기화시킴
         $(".train").css("transform","translateX("+(-200*idx)+"px)")
