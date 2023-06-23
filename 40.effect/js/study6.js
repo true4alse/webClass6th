@@ -67,4 +67,21 @@ $(document).ready(function(){
         $(".train>li").eq(idx).children("img").css("transform","scale("+(1+per)+")")
     }
 
+    $(document).mousemove(function(event){
+        let x = event.clientX
+        let y = event.clientY
+        $(".cursor").css("left",x+"px")
+        $(".cursor").css("top",y+"px")
+        $(".cursor").addClass("on")
+
+        $(".cursorSub").css("left",(x+15)+"px")
+        $(".cursorSub").css("top",(y+15)+"px")
+        $(".cursorSub").addClass("on")
+
+        $(".curTxt").css("left",(x+20)+"px")
+        $(".curTxt").css("top",(y-10)+"px")
+        $(".curTxt").addClass("on")
+
+    })
+
 })
