@@ -70,18 +70,47 @@ $(document).ready(function(){
     $(document).mousemove(function(event){
         let x = event.clientX
         let y = event.clientY
+
+        // 커서 화살표가 따라다니는 소스
         $(".cursor").css("left",x+"px")
         $(".cursor").css("top",y+"px")
         $(".cursor").addClass("on")
 
-        $(".cursorSub").css("left",(x+15)+"px")
-        $(".cursorSub").css("top",(y+15)+"px")
-        $(".cursorSub").addClass("on")
-
+        // 커서텍스트가 따라다니는 소스
         $(".curTxt").css("left",(x+20)+"px")
         $(".curTxt").css("top",(y-10)+"px")
+
+        // 보조 커서가 나오는 소스
+        $(".cursorSub").addClass("on")
+
+        if($(".curSubbox").hasClass("on")==false){
+            // 마우스가 슬라이드 영역밖에 있다면
+            $(".cursorSub").css("left",(x+15)+"px")
+            $(".cursorSub").css("top",(y+15)+"px")
+        }else{
+            // 마우스가 슬라이드 영역안에 들어갔다면
+            $(".cursorSub").css("left",(x+15)+"px")
+            $(".cursorSub").eq(0).css("top",(y+15)+"px")
+            $(".cursorSub").eq(1).css("top",(y+30)+"px")
+            $(".cursorSub").eq(2).css("top",(y+45)+"px")
+            $(".cursorSub").eq(3).css("top",(y+60)+"px")
+            $(".cursorSub").eq(4).css("top",(y+75)+"px")
+
+        }
+        
+        
+    })
+
+    $(".fixedEffect").mouseover(function(){
         $(".curTxt").addClass("on")
+        $(".curSubbox").addClass("on")
 
     })
+    $(".fixedEffect").mouseout(function(){
+        $(".curTxt").removeClass("on")
+        $(".curSubbox").removeClass("on")
+    })
+
+
 
 })
