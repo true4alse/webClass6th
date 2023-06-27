@@ -2,9 +2,8 @@
 ul,ol{list-style:none;}
 
 ul svg{
-    
     border:1px solid red;
-    transform:rotate(-90deg)
+    transform:rotate(-90deg);
 }
 .a{
     transition:all 1s ease 0s;
@@ -14,14 +13,13 @@ ul svg{
     stroke-width:2;
     stroke-dasharray:314;
     stroke-dashoffset: 314;
-
 }
 .a:hover{
     fill:navy;
     fill-opacity: 1;
     stroke:seagreen;
     stroke-width: 10;
-    stroke-dashoffset: calc((1 - 0.8)*314);
+    stroke-dashoffset: calc((1 - 0.85)*314)
 }
 .list{
     width:1200px;
@@ -34,11 +32,12 @@ ul svg{
 .c1{
     fill:#fff;stroke:#000;stroke-miterlimit:10;
     transition:all 5s ease 0s;
-    stroke-dasharray: 10000;
-    stroke-dashoffset: 10000;
+    /* stroke-dasharray: 10000;
+    stroke-dashoffset: 10000; */
 }
 .c1:hover{
     stroke:red;
     stroke-width:5;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0!important;
 }
+
