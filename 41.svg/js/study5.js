@@ -1,4 +1,3 @@
-alert("TEST")
 
 $(document).ready(function(){
 
@@ -10,7 +9,7 @@ $(document).ready(function(){
     $("#introtxt path").each(function(){
         let path = $(this)
         let idx = path.index()
-        let secondTerm = 0.1
+        let secondTerm = 0.4
         let delay = idx*secondTerm
 
         let pathLength = $(this).get(0).getTotalLength()
